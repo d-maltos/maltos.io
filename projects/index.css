@@ -1,0 +1,140 @@
+/* CSS for the Projects page of my website */
+
+/* CSS for the fade-in effect */
+.fade-in {
+    animation: fadeInFromWhite 0.5s ease forwards;
+  }
+  
+  @keyframes fadeInFromWhite {
+    from {
+      opacity: 0;
+      background-color: white;
+    }
+    to {
+      opacity: 1;
+      background-color: transparent;
+    }
+}
+
+/* CSS for the fade-out effect */
+.fade-out {
+    animation: fadeOutToWhite 0.5s ease forwards;
+  }
+  
+  @keyframes fadeOutToWhite {
+    to {
+      opacity: 0;
+      background-color: white;
+    }
+}
+
+/* CSS for the header */
+header {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+/* CSS for the container div */
+#container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "title content";
+    grid-template-columns: 1fr 3fr; /* Adjust the ratio to your liking */
+    grid-template-rows: auto 1fr;
+    gap: 10px; /* Adjust the gap to your liking */
+    height: 100%;
+    width: 90%; /* Adjust the width to your liking */
+    max-width: 1200px; /* Or whatever maximum width you prefer */
+}
+
+/* CSS for the name-title div */
+#name-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* CSS for the main-content div */
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* CSS for the projects-title div */
+#projects-title {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    align-self: flex-start;
+}
+
+/* CSS for the projects-text div */
+#projects-text {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    align-self: flex-start;
+}
+
+/* CSS for the navbar */
+#navbar {
+    display: block;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+#navbar a {
+    margin-right: 20px; /* Space out the links */
+    text-decoration: none;
+    color: #000;
+}
+#navbar a:hover,
+        a:active {
+    margin-right: 20px; /* Space out the links */
+    text-decoration: none;
+    transition: color 0.5s ease; /* Smooth transition for the filter */
+    color: grey;
+}
+
+#navbar ul {
+    list-style-type: none; /* Removes the default list styling */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Aligns with the title */
+}
+
+#navbar li {
+    padding: 5px 0; /* Adds some vertical padding between links */
+}
+
+/* CSS for .no-style-link */
+.no-style-link {
+  text-decoration: none;
+  color: black; 
+  transition: color 0.5s ease;
+}
+
+.no-style-link:hover {
+  color: grey;
+}

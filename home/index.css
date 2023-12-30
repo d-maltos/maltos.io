@@ -1,0 +1,91 @@
+/* CSS file defining the styles for the Home page of my website */
+
+/* CSS for the fade-in effect */
+.fade-in {
+    animation: fadeInFromWhite 0.5s ease forwards;
+  }
+  
+  @keyframes fadeInFromWhite {
+    from {
+      opacity: 0;
+      background-color: white;
+    }
+    to {
+      opacity: 1;
+      background-color: transparent;
+    }
+}
+
+/* CSS for the fade-out effect */
+.fade-out {
+    animation: fadeOutToWhite 0.5s ease forwards;
+  }
+  
+  @keyframes fadeOutToWhite {
+    to {
+      opacity: 0;
+      background-color: white;
+    }
+  }
+  
+/* CSS for the name-title div */
+#name-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    flex-basis: 20%;
+    flex-shrink: 0;
+    margin-top: 29.5px;
+}
+
+/* CSS for the pages-header div */
+#pages-header {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stacks children vertically */
+  }
+
+#pages-header a,       /* Targets the anchor tags within the #pages-header div */
+#pages-header a:visited { /* Targets the visited state of the anchor tags */
+  color: black;        /* Sets the text color to black */
+  transition: color 0.5s ease; /* Smooth transition for the filter */
+  text-decoration: none; /* Removes the underline from the text */
+}
+
+#pages-header a:hover,
+#pages-header a:active {
+  color: grey; /* Changes the text color to grey on hover */
+  transition: color 0.5s ease; /* Smooth transition for the filter */
+  text-decoration: none; /* Ensures that the text is not underlined even when hovered or clicked */
+}
+
+/* CSS for the socials div */
+#socials {
+    position: center;
+    text-align: center;
+}
+
+#socials a,
+#socials a:visited {
+    text-decoration: none; /* Removes underline from links */
+    border: none; /* Removes border from links */
+}
+
+#socials img {
+    width: 40px;
+    height: 40px;
+    transition: filter 0.3s ease; /* Smooth transition for the filter */
+}
+
+#socials a:hover img,
+#socials a:active img {
+  filter: grayscale(100%); /* Apply grayscale filter on hover */
+}
+
